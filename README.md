@@ -1,4 +1,4 @@
-# DevStack with Swift Neutron LBaaS
+# DevStack with Swift Neutron &amp; LBaaS
 Preconfigured DevStack stable/Juno (Snapshot from jenkins 21/05/2015) with Swift, Neutron &amp; LBaaSv2
 ##Intro
 This repo was successfully tested on Ubuntu 14.04 (tested date: 22/05/2015)
