@@ -1,9 +1,12 @@
 # DevStack with Swift Neutron &amp; LBaaS
 Preconfigured DevStack (Snapshot from jenkins 21/05/2015) with Swift, Neutron &amp; LBaaSv2
+
 ##Intro
-This repo was successfully tested on Ubuntu 14.04 (test date: 22/05/2015)
+This repo was successfully tested on Ubuntu 14.04 (test date: 22/05/2015) with VirtualBox 4.3.28
 
 This repo was created for easy testing installation the latest version of DevStack (Juno) with Swift, Neutron &amp; LBaaSv2
+
+Its also automatically enables IPv4 by default and disables IPv6 
 
 ##Pre-installation
 Please check that you distro is updated
@@ -15,7 +18,6 @@ $ sudo apt-get -y dist-upgrade
 $ sudo apt-get update
 ```
 
-
 ##Getting DevStack
 ```sh
 $ git clone https://github.com/Pankov404/DevStack-with-Swift-Neutron-LBaaS
@@ -26,7 +28,6 @@ $ sudo chmod 755 -R DevStack-with-Swift-Neutron-LBaaS
 $ cd DevStack-with-Swift-Neutron-LBaaS
 $ ./stack.sh
 ```
-
 It takes some time, so be patient
 
 ##Finish
@@ -38,7 +39,6 @@ Keystone is serving at http://10.0.2.15:5000/
 The default users are: admin and demo
 The password: root
 ```
-
 Go and check the installed DevStack on 10.0.2.15 or localhost
 
 ##Troubleshooting
