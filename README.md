@@ -21,7 +21,7 @@ $ git clone https://github.com/Pankov404/DevStack-with-Swift-Neutron-LBaaS
 ```
 ##Installation & Running 
 ```sh
-$ chmod 755 -R DevStack-with-Swift-Neutron-LBaaS
+$ sudo chmod 755 -R DevStack-with-Swift-Neutron-LBaaS
 $ cd DevStack-with-Swift-Neutron-LBaaS
 $ ./stack.sh
 ```
