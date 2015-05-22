@@ -29,4 +29,5 @@ Go and check the installed DevStack
 2015-05-22 14:55:15.959 | Error on exit
 ##Solution
 git config --global url.https://github.com/.insteadOf git://git.openstack.org/
+and then ./stack.sh
 
