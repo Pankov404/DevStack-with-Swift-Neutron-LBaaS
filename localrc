@@ -19,6 +19,8 @@ LIBS_FROM_GIT+=python-neutronclient
 # Originally from http://www.sebastien-han.fr/blog/2013/08/08/devstack-in-1-minute/
 # Misc
 
+REQUIREMENTS_BRANCH=table/juno
+
 GLANCE_BRANCH=stable/juno
 HORIZON_BRANCH=stable/juno
 KEYSTONE_BRANCH=stable/juno
