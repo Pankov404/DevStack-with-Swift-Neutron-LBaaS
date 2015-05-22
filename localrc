@@ -1,0 +1,71 @@
+# Load the external LBaaS plugin.
+enable_plugin neutron-lbaas https://review.openstack.org/openstack/neutron-lbaas 
+# Until Kilo 2 packages are available, get the neutron client with V2 support from git:
+LIBS_FROM_GIT+=python-neutronclient
+
+#Q_PLUGIN=ml2
+#Q_ML2_TENANT_NETWORK_TYPE=vxlan
+#Q_DVR_MODE=dvr_snat
+# ===== BEGIN localrc =====
+# Begin Al's notes
+#
+# Depending on network filewalls and proxy settings, you may not be
+# able to use the git protocol, in which case, override GIT_BASE to
+# use http/https. In the HP public cloud you will not need to do
+# this, but you may need to do so in environments requiring http
+# proxy.
+# GIT_BASE=http://git.openstack.org
+# End Al's notes
+# Originally from http://www.sebastien-han.fr/blog/2013/08/08/devstack-in-1-minute/
+# Misc
+
+
+
+GLANCE_BRANCH=stable/juno
+HORIZON_BRANCH=stable/juno
+KEYSTONE_BRANCH=stable/juno
+NOVA_BRANCH=stable/juno
+NEUTRON_BRANCH=stable/juno
+SWIFT_BRANCH=2.2.1
+
+
+
+
+DATABASE_PASSWORD=root
+ADMIN_PASSWORD=root
+SERVICE_PASSWORD=root
+SERVICE_TOKEN=root
+RABBIT_PASSWORD=root
+# Enable Logging
+LOGFILE=/opt/stack/logs/stack.sh.log
+VERBOSE=True
+LOG_COLOR=True
+SCREEN_LOGDIR=/opt/stack/logs
+# Pre-requisite
+ENABLED_SERVICES=rabbit,mysql,key
+# Horizon (always use the trunk)
+ENABLED_SERVICES+=,horizon
+HORIZON_REPO=https://github.com/openstack/horizon
+#HORIZON_BRANCH=master
+# Nova
+ENABLED_SERVICES+=,n-api,n-crt,n-obj,n-cpu,n-cond,n-sch
+IMAGE_URLS+=",https://launchpad.net/cirros/trunk/0.3.0/+download/cirros-0.3.0-x86_64-disk.img"
+# Glance
+ENABLED_SERVICES+=,g-api,g-reg
+# Neutron
+ENABLED_SERVICES+=,q-svc,q-agt,q-dhcp,q-l3,q-meta,neutron
+# Enable LBaaS V2
+ENABLED_SERVICES+=,q-lbaasv2
+# Cinder
+ENABLED_SERVICES+=,cinder,c-api,c-vol,c-sch
+
+#Swift
+ENABLED_SERVICES+=,s-proxy,s-object,s-container,s-account
+SWIFT_HASH=66a3d6b56c1f479c8b4e70ab5c2000f5 
+#Only IPV4
+IP_VERSION=4
+DISABLE_SERVICES=n-net
+
+# Tempest
+ENABLED_SERVICES+=,tempest
+# ===== END localrc =====
