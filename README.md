@@ -6,7 +6,7 @@ This repo was successfully tested on Ubuntu 14.04 (test date: 22/05/2015) with V
 
 This repo was created for easy testing installation the latest version of DevStack (Juno) with Swift, Neutron &amp; LBaaSv2
 
-Its also automatically enables IPv4 by default and disables IPv6 
+It also automatically enables IPv4 by default and disables IPv6 
 
 ##Pre-installation
 Please check that you distro is updated
