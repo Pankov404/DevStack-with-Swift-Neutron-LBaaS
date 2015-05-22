@@ -22,3 +22,11 @@ It takes some time, so be patient
 
 ##Finish
 Go and check the installed DevStack
+
+#Troubleshooting
+##507 ERROR
+2015-05-22 14:55:14.951 | [ERROR] /home/stack/DevStack-with-Swift-Neutron-LBaaS/functions-common:507 git call failed: [git clone git://git.openstack.org/openstack/requirements.git /opt/stack/requirements]
+2015-05-22 14:55:15.959 | Error on exit
+##Solution
+git config --global url.https://github.com/.insteadOf git://git.openstack.org/
+
