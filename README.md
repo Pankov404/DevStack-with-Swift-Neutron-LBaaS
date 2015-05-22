@@ -9,6 +9,7 @@ This repo was created for easy testing installation the latest version of DevSta
 Please check that you distro is updated
 ```sh
 $ sudo apt-get update
+$ sudo apt-get install git
 $ sudo apt-get -y upgrade 
 $ sudo apt-get -y dist-upgrade 
 $ sudo apt-get update
