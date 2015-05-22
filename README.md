@@ -1,5 +1,5 @@
 # DevStack-with-Swift-Neutron-LBaaS
-Preconfigured DevStack stable/Juno (Snapshot from jennkis 21/05/2015) with Swift, Neutron &amp; LBaaSv2
+Preconfigured DevStack stable/Juno (Snapshot from jenkins 21/05/2015) with Swift, Neutron &amp; LBaaSv2
 
 ##Pre-installation
 Please check that you distro is updated
