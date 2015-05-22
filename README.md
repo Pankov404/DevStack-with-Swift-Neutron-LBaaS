@@ -29,7 +29,16 @@ $ ./stack.sh
 It takes some time, so be patient
 
 ##Finish
+
+This is your host ip: 10.0.2.15
+Horizon is now available at http://10.0.2.15/
+Keystone is serving at http://10.0.2.15:5000/
+The default users are: admin and demo
+The password: root
+
 Go and check the installed DevStack
+
+or 10.0.2.15 or localhost
 
 ##Troubleshooting
 ###507 ERROR
