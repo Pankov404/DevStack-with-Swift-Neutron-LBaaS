@@ -54,8 +54,8 @@ and try again
 $ ./stack.sh
 ```
 ###Any others problems during installation
-####solution
-try to clean and unstack 
+####general solution
+try to clean and unstack
 ```sh
 $ ./clean.sh
 $ ./unstack.sh
@@ -63,3 +63,7 @@ $ ./unstack.sh
 and try re-stack again
 ```sh
 $ ./stack.sh
+```
+if it still doesn't work try to reboot OS and start again.
+
+Good Luck! :)
