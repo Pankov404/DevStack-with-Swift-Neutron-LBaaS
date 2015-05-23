@@ -2,9 +2,9 @@
 Preconfigured DevStack with Swift, Neutron &amp; LBaaSv2
 
 ##Intro
-This repo was successfully tested on Ubuntu 14.04 (test date: 22/05/2015) with VirtualBox 4.3.28
+This repo was successfully tested on Ubuntu 14.04 with VirtualBox 4.3.28 (test date: 23/05/2015) 
 
-This repo was created for easy testing installation the latest version of DevStack (Juno) with Swift, Neutron &amp; LBaaSv2
+This repo was created for easy testing installation the latest version of DevStack with Swift, Neutron &amp; LBaaSv2
 
 It also automatically enables IPv4 by default and disables IPv6 
 
@@ -55,9 +55,11 @@ $ ./stack.sh
 ```
 ###Any others problems during installation
 ####solution
+try to clean and unstack 
 ```sh
 $ ./clean.sh
+$ ./unstack.sh
 ```
-and try again
+and try re-stack again
 ```sh
 $ ./stack.sh
